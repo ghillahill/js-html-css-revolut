@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    width: 200px;
+    height: 100%;
+}
+
+.header-left ul, .header-right ul {
+    list-style-type: none;
+}
+
+.header-left ul li, .header-right ul li {
+    display: inline-block;
+}
+
+.dropdown-one, .dropdown-two, .dropdown-three, .dropdown-four{
+    position: relative;
+}
+
+.dropdown-menu-one, .dropdown-menu-two, .dropdown-menu-three, .dropdown-menu-four {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    border-radius: 10px;
+    box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.82);
+}
+
+.dropdown-menu-one ul, .dropdown-menu-two ul, .dropdown-menu-three ul, .dropdown-menu-four ul{
+    padding: 10px;
+}
+
+.dropdown-menu-one ul a, .dropdown-menu-two ul a, .dropdown-menu-three ul a, .dropdown-menu-four ul a{
+    padding: 10px;
+    color: black;
+}
+
+.header-left ul li a, .header-right ul li a {
+    display: inline-block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.dropdown-menu-one.active, .dropdown-menu-two.active, .dropdown-menu-three.active, .dropdown-menu-four.active {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 10px;
+}
